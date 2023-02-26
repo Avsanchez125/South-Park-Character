@@ -1,0 +1,61 @@
+:root {
+  --main-title-font: "South Park", sans-serif;
+  --title-font: "Bangers", cursive;
+  --paragraph-font: "Staatliches", cursive;
+  --heading-font: "Tilt Warp", cursive;
+  --bg-color: #a6d9f7;
+  --paragraph-color: #2c4251;
+  --second-color: #f7b32b;
+}
+
+html {
+  display: block;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: var(--main-title-font);
+  text-align: center;
+  margin: auto;
+}
+
+.btn {
+  color: var(--paragraph-color);
+  font-family: var(--title-font);
+  font-size: 2.5rem;
+  margin: 5%;
+  padding: 1rem;
+  background-color: var(--second-color);
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: var(--paragraph-color);
+  color: var(--second-color);
+  cursor: pointer;
+}
+
+.img {
+  margin: auto 10px;
+  text-align: center;
+  height: 50vh;
+}
+
+/* media query */
+
+@media screen and (max-width: 930px) and (min-width: 300px) {
+  body {
+    margin: 20vh auto 20vh auto;
+    font-size: 1.2rem;
+  }
+  .btn {
+    font-size: 2.5rem;
+  }
+
+  .img {
+    margin: auto 10px;
+    text-align: center;
+    height: 35vh;
+  }
+}
